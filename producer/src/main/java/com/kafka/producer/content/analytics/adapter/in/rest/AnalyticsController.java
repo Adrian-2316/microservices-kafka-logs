@@ -1,13 +1,10 @@
 package com.kafka.producer.content.analytics.adapter.in.rest;
 
-import com.kafka.producer.content.analytics.adapter.in.rest.dtos.AnalyticsDto;
-import com.kafka.producer.content.analytics.adapter.in.rest.dtos.AnalyticsDtoMapper;
 import com.kafka.producer.content.analytics.service.ports.in.AnalyticsPort;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,8 +17,8 @@ public class AnalyticsController {
 
     @PostMapping("/send")
     @Transactional(rollbackFor = Exception.class)
-    public void sendAnalytics(@RequestBody AnalyticsDto analyticsDto) {
-        analyticsPort.sendAnalytics(AnalyticsDtoMapper.INSTANCE.toDomainModel(analyticsDto));
+    public void sendAnalytics() {
+        analyticsPort.sendAnalytics();
     }
 
 }

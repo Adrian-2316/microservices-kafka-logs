@@ -12,7 +12,7 @@
 	<artifactId>producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>producer</name>
-	<description>Event driven arquitecture microservice project for Spring Boot</description>
+	<description>Event driven architecture microservice project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>

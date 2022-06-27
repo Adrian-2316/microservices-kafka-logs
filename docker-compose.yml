@@ -5,7 +5,7 @@ services:
      ports:
       - '2181:2181'
      networks:
-       - glucemy_net
+       - analytics_net
      environment:
      - ALLOW_ANONYMOUS_LOGIN=yes
    kafka:
@@ -13,7 +13,7 @@ services:
       ports:
         - '9092:9092'
       networks:
-        - glucemy_net
+        - analytics_net
       environment:
         - KAFKA_ENABLE_KRAFT=yes
         - KAFKA_CFG_PROCESS_ROLES=broker,controller
@@ -29,4 +29,5 @@ services:
       depends_on:
        - zookeeper
 networks:
-    glucemy_net:
+    analytics_net:
+      name: analytics_net

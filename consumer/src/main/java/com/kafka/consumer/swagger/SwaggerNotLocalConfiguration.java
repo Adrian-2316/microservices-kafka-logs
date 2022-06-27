@@ -1,4 +1,4 @@
-package com.kafka.producer.swagger;
+package com.kafka.consumer.swagger;
 
 import org.springdoc.core.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ public class SwaggerNotLocalConfiguration {
 
     @Bean
     public GroupedOpenApi publicApi() {
-        return GroupedOpenApi.builder().group("Producer").packagesToScan("com.kafka.producer.content").pathsToMatch("/**").build();
+        return GroupedOpenApi.builder().group("Consumer").packagesToScan("com.kafka.consumer.content").pathsToMatch("/**").build();
 
     }
 }
