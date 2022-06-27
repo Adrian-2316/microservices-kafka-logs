@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="Producer working.&#10;Consumer working.&#10;ReadME updated." />
+    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="Producer working.&#10;Consumer working.&#10;ReadME updated.">
+      <change afterPath="$PROJECT_DIR$/images/messages.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656363558235</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Producer working.&#10;Consumer working.&#10;ReadME updated.">
+      <created>1656363910915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656363910915</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

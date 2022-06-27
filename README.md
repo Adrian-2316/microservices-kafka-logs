@@ -31,6 +31,13 @@ It is mainly used for testing purposes.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Scheduled tasks
+
+A task is executed periodically to publish events to Kafka.
+<img src="images/messages.png" alt="scheduled tasks">
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Built with
 
 - **Java**
