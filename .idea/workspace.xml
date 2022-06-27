@@ -91,7 +91,7 @@
       <recent name="com.kafka.consumer.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Producer">
+  <component name="RunManager" selected="Diffblue Cover.Write tests for class Analytics">
     <configuration name="Producer" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -101,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Write tests for class Analytics" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+    <configuration name="Write tests for class Analytics" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
       <module name="producer" />
       <settings run-config-name="Write tests for class Analytics" include-system-env-vars="true">
         <jvm-args />
