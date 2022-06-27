@@ -4,38 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/ConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/kafka/consumer/ConsumerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/ProducerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/adapter/in/rest/LogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/adapter/in/rest/dtos/LogDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/adapter/in/rest/dtos/LogDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/models/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/LogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/ports/in/LogPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/ports/in/log/adapter/in/rest/LogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/ports/in/log/adapter/in/rest/dtos/LogDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/ports/in/log/adapter/in/rest/dtos/LogDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/ports/in/log/models/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/ports/in/log/service/LogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/log/service/ports/in/log/service/ports/in/LogPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/test/java/com/kafka/producer/ProducerApplicationTests.java" afterDir="false" />
+    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="First commit.">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/config/KafkaConsumerconfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/rest/AnalyticsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/rest/dtos/AnalyticsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/rest/dtos/AnalyticsDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/models/Analytics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/service/AnalyticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/service/ports/in/AnalyticsPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/swagger/SwaggerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/swagger/SwaggerNotLocalConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/test/java/com/kafka/producer/content/analytics/adapter/in/rest/dtos/AnalyticsDtoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/AnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/dtos/AnalyticsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/dtos/AnalyticsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/dtos/AnalyticsDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/dtos/AnalyticsDtoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/models/Analytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/models/Analytics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/AnalyticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/AnalyticsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/ports/in/AnalyticsPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/ports/in/AnalyticsPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +35,31 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2BAepKmkgd1sMoZMYztB69bWvm7" />
   <component name="ProjectLevelVcsManager">
@@ -66,15 +76,49 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/adri9/IdeaProjects/microservices-kafka-logs/producer/src/main/java/com/kafka/producer/content/log/service/ports/in",
+    "last_opened_file_path": "C:/Users/adri9/IdeaProjects/microservices-kafka-logs/producer/src/main/java/com/kafka/producer",
     "settings.editor.selected.configurable": "editor.preferences.import"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adri9\IdeaProjects\microservices-kafka-logs\producer\src\main\java\com\kafka\producer" />
+      <recent name="C:\Users\adri9\IdeaProjects\microservices-kafka-logs\consumer\src\main\java\com\kafka\consumer\content" />
       <recent name="C:\Users\adri9\IdeaProjects\microservices-kafka-logs\producer\src\main\java\com\kafka\producer\content\log\service\ports\in" />
       <recent name="C:\Users\adri9\IdeaProjects\microservices-kafka-logs\consumer\src\main\java\com\kafka\consumer\content\log" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kafka.consumer.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Producer">
+    <configuration name="Producer" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.kafka.producer.ProducerApplication" />
+      <module name="producer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Write tests for class Analytics" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="producer" />
+      <settings run-config-name="Write tests for class Analytics" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.kafka.producer.content.analytics.models.Analytics" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Producer" />
+      <item itemvalue="Diffblue Cover.Write tests for class Analytics" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Diffblue Cover.Write tests for class Analytics" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,6 +129,21 @@
       <option name="presentableId" value="Default" />
       <updated>1656353498784</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit.">
+      <created>1656355664367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656355664367</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First commit.">
+      <created>1656355710975</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656355710975</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit." />
   </component>
 </project>

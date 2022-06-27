@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class AnalyticsController {
     private AnalyticsPort analyticsPort;
 
-    @PostMapping("/")
+    @PostMapping("/send")
     @Transactional(rollbackFor = Exception.class)
-    public AnalyticsDto createAnalytics(@RequestBody AnalyticsDto analyticsDto) {
-        return AnalyticsDtoMapper.INSTANCE.toDto(analyticsPort.createAnalytics(AnalyticsDtoMapper.INSTANCE.toDomainModel(analyticsDto)));
+    public void sendAnalytics(@RequestBody AnalyticsDto analyticsDto) {
+        analyticsPort.sendAnalytics(AnalyticsDtoMapper.INSTANCE.toDomainModel(analyticsDto));
     }
 
 }

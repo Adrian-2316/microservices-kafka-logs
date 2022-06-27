@@ -8,7 +8,5 @@ import org.mapstruct.factory.Mappers;
 public interface AnalyticsDtoMapper {
     AnalyticsDtoMapper INSTANCE = Mappers.getMapper(AnalyticsDtoMapper.class);
 
-    AnalyticsDto toDto(Analytics analytics);
-
     Analytics toDomainModel(AnalyticsDto analyticsDto);
 }
