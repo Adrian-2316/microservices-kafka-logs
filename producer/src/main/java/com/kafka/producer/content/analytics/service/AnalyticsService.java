@@ -2,7 +2,6 @@ package com.kafka.producer.content.analytics.service;
 
 import com.kafka.producer.content.analytics.models.Analytics;
 import com.kafka.producer.content.analytics.service.ports.in.AnalyticsPort;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
-@AllArgsConstructor
 @Service
 public class AnalyticsService implements AnalyticsPort {
 

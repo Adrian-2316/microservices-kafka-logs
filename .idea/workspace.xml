@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="First commit.">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/processing/adapter/in/kafka/AnalyticsDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/processing/adapter/in/kafka/AnalyticsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/swagger/SwaggerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/swagger/SwaggerNotLocalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/ScheduledService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaTopicConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/config/KafkaConsumerconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/in/rest/AnalyticsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/models/Analytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/models/Analytics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/AnalyticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/AnalyticsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/ports/in/AnalyticsPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/ports/in/AnalyticsPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaProducerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/swagger/SwaggerNotLocalConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/swagger/SwaggerNotLocalConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="Producer working.&#10;Consumer working.&#10;ReadME updated." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656355710975</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Producer working.&#10;Consumer working.&#10;ReadME updated.">
+      <created>1656363558235</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656363558235</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +161,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit." />
+    <MESSAGE value="Producer conf." />
+    <MESSAGE value="Producer working.&#10;Consumer working.&#10;ReadME updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Producer working.&#10;Consumer working.&#10;ReadME updated." />
   </component>
 </project>
