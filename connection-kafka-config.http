@@ -1,0 +1,28 @@
+POST localhost:8083/connectors
+Content-Type: application/json
+
+{
+  "name": "elasticsearch",
+  "config": {
+    "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+    "tasks.max": "1",
+    "topics": "analytics",
+    "key.ignore": "False",
+    "schema.ignore": "true",
+    "connection.url": "http://elastic_container:9200",
+    "type.name": "_doc",
+    "name": "elasticsearch-kafka",
+    "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "key.converter.schemas.enable": "false",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+    "property parse.key": "true",
+    "transforms": "insertTS,formatTS",
+    "transforms.insertTS.type": "org.apache.kafka.connect.transforms.InsertField$Value",
+    "transforms.insertTS.timestamp.field": "timestamp",
+    "transforms.formatTS.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.formatTS.format": "yyyy-MM-dd'T'HH:mm:ss",
+    "transforms.formatTS.field": "timestamp",
+    "transforms.formatTS.target.type": "string"
+  }
+}
