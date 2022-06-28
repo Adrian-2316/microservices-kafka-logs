@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="Producer working.&#10;Consumer working.&#10;ReadME updated.">
-      <change afterPath="$PROJECT_DIR$/connection-kafka-config.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/kafka/consumer/content/analytics/adapter/in/rest/dtos/AnalyticsDtoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/kafka/consumer/content/analytics/models/AnalyticsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/elastic-metrics1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/elastic-metrics2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/test/java/com/kafka/consumer/ConsumerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/test/java/com/kafka/consumer/ConsumerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/test/java/com/kafka/producer/ProducerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/test/java/com/kafka/producer/ProducerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/kafka/AnalyticsDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/kafka/AnalyticsDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/service/AnalyticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/service/AnalyticsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/test/java/com/kafka/producer/content/analytics/models/AnalyticsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/test/java/com/kafka/producer/content/analytics/models/AnalyticsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "google-java-format.settings",
+    "settings.editor.selected.configurable": "com.diffblue.cover.intellij",
     "spring.configuration.checksum": "1005b14bd29466723ace30d26f602f5b"
   }
 }]]></component>
@@ -92,11 +92,14 @@
       <recent name="C:\Users\adri9\IdeaProjects\microservices-kafka-logs\producer\src\main\java\com\kafka\producer" />
       <recent name="C:\Users\adri9\IdeaProjects\microservices-kafka-logs\consumer\src\main\java\com\kafka\consumer\content" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adri9\IdeaProjects\microservices-kafka-logs\images" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.kafka.consumer.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProducerApplication">
+  <component name="RunManager" selected="Diffblue Cover.Write tests for class Analytics">
     <configuration name="Consumer" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -132,16 +135,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Write tests for class Analytics (2)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="consumer" />
+      <settings run-config-name="Write tests for class Analytics (2)" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.kafka.consumer.content.analytics.models.Analytics" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class Analytics" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="producer" />
+      <settings run-config-name="Write tests for class Analytics" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.kafka.producer.content.analytics.models.Analytics" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class AnalyticsDto (2)" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="consumer" />
+      <settings run-config-name="Write tests for class AnalyticsDto (2)" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.kafka.consumer.content.analytics.adapter.in.rest.dtos.AnalyticsDto" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class AnalyticsDto" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="producer" />
+      <settings run-config-name="Write tests for class AnalyticsDto" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.kafka.producer.content.analytics.adapter.in.rest.dtos.AnalyticsDto" />
+      </settings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Producer" />
       <item itemvalue="Application.Consumer" />
-      <item itemvalue="HTTP Request.connection-kafka-config | #1" />
-      <item itemvalue="Spring Boot.ConsumerApplication" />
-      <item itemvalue="Spring Boot.ProducerApplication" />
+      <item itemvalue="Diffblue Cover.Write tests for class Analytics" />
+      <item itemvalue="Diffblue Cover.Write tests for class Analytics (2)" />
+      <item itemvalue="Diffblue Cover.Write tests for class AnalyticsDto" />
+      <item itemvalue="Diffblue Cover.Write tests for class AnalyticsDto (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.connection-kafka-config | #1" />
+        <item itemvalue="Diffblue Cover.Write tests for class AnalyticsDto (2)" />
+        <item itemvalue="Diffblue Cover.Write tests for class Analytics (2)" />
+        <item itemvalue="Diffblue Cover.Write tests for class Analytics" />
+        <item itemvalue="Diffblue Cover.Write tests for class AnalyticsDto" />
       </list>
     </recent_temporary>
   </component>
@@ -206,5 +249,9 @@
     <MESSAGE value="Producer conf." />
     <MESSAGE value="Producer working.&#10;Consumer working.&#10;ReadME updated." />
     <option name="LAST_COMMIT_MESSAGE" value="Producer working.&#10;Consumer working.&#10;ReadME updated." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/microservices_kafka_logs$Consumer.ic" NAME="Consumer Coverage Results" MODIFIED="1656443150258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/microservices_kafka_logs$Producer.ic" NAME="Producer Coverage Results" MODIFIED="1656443139220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
