@@ -38,6 +38,13 @@ A task is executed periodically to publish events to Kafka.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Elastic integration
+
+The consumer application provides logs to Elasticsearch from Kafka messages.
+<img src="images/elastic-metrics1.png" alt="elastic metrics">
+<img src="images/elastic-metrics2.png" alt="elastic metrics">
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Built with
 
 - **Java**

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class AnalyticsService implements AnalyticsPort {
 
-
     @Override
     public Analytics createAnalytics(Analytics analytics) {
         return  new Analytics();
