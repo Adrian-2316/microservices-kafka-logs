@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="Producer working.&#10;Consumer working.&#10;ReadME updated.">
-      <change afterPath="$PROJECT_DIR$/images/messages.png" afterDir="false" />
+    <list default="true" id="559db2a3-58b9-4932-875d-d258baa2d5b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/kafka/AnalyticsDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/rest/AnalyticsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/rest/dtos/AnalyticsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/adapter/in/rest/dtos/AnalyticsDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/models/Analytics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/service/AnalyticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/analytics/service/ports/in/AnalyticsPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/adapter/out/kafka/AnalyticsSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/processing/adapter/in/kafka/AnalyticsDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/kafka/consumer/content/processing/adapter/in/kafka/AnalyticsDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/AnalyticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/analytics/service/AnalyticsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaTopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/kafka/producer/content/config/KafkaTopicConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +73,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/adri9/IdeaProjects/microservices-kafka-logs/consumer/src/main/java/com/kafka/consumer",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "google-java-format.settings"
+    "last_opened_file_path": "C:/Users/adri9/IdeaProjects/microservices-kafka-logs/producer/src/main/java/com/kafka/producer/content/log/service/ports/in",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,7 +97,7 @@
       <recent name="com.kafka.consumer.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Producer">
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication">
     <configuration name="Consumer" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -113,9 +129,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kafka.consumer.ConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kafka.producer.ProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Producer" />
       <item itemvalue="Application.Consumer" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.ProducerApplication" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
