@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
+import java.util.UUID;
+
 @Service
 public class AnalyticsService implements AnalyticsPort {
 
@@ -21,7 +23,7 @@ public class AnalyticsService implements AnalyticsPort {
         Analytics analytics = new Analytics();
         analytics.randomizeAnalytics();
         ListenableFuture<SendResult<String, Analytics>> future =
-                kafkaTemplate.send("analytics", analytics);
+                kafkaTemplate.send("analytics", UUID.randomUUID().toString(), analytics);
 
         future.addCallback(
                 new ListenableFutureCallback<>() {

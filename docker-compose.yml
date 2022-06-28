@@ -12,7 +12,7 @@ services:
     restart: always
   kafka:
     container_name: kafka
-    image: 'bitnami/kafka:latest'
+    image: 'bitnami/kafka:3.1'
     ports:
       - '9092:9092'
     networks:
@@ -40,6 +40,7 @@ services:
       xpack.security.enabled: "false"
       ES_JAVA_OPTS: "-Xms1g -Xmx1g"
       discovery.type: "single-node"
+
     networks:
       - analytics_net
     volumes:
@@ -57,7 +58,7 @@ services:
       - elasticsearch
   connect:
     container_name: kafka-connect
-    image: confluentinc/cp-kafka-connect:3.3.1
+    image: confluentinc/cp-kafka-connect:7.1.0
     ports:
       - "8083:8083"
     depends_on:
@@ -86,10 +87,21 @@ services:
       CONNECT_CONSUMER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringConsumerInterceptor"
       CONNECT_REST_ADVERTISED_HOST_NAME: "connect"
       CONNECT_ZOOKEEPER_CONNECT: zookeeper:2181
-      CONNECT_PLUGIN_PATH: /connect-plugins
       CONNECT_LOG4J_ROOT_LOGLEVEL: INFO
       CONNECT_LOG4J_LOGGERS: org.reflections=ERROR
       CLASSPATH: /usr/share/java/monitoring-interceptors/monitoring-interceptors-3.3.0.jar
+      CONNECT_PLUGIN_PATH: '/usr/share/java,/connectors,/usr/share/confluent-hub-components/'
+    command:
+      - bash
+      - -c
+      - |
+        echo "Installing Connector"
+        confluent-hub install --no-prompt confluentinc/kafka-connect-elasticsearch:10.0.1
+        #
+        echo "Launching Kafka Connect worker"
+        /etc/confluent/docker/run &
+        #
+        sleep infinity
   consumer:
     build: ./producer
     ports:
