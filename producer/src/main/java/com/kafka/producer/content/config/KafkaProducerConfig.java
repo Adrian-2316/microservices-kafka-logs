@@ -1,5 +1,7 @@
 package com.kafka.producer.content.config;
 
+import com.kafka.producer.content.analytics.adapter.out.kafka.AnalyticsSerializer;
+import com.kafka.producer.content.analytics.models.Analytics;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,7 +21,7 @@ public class KafkaProducerConfig {
 
 
     @Bean
-    public ProducerFactory<String, String> producerFactory() {
+    public ProducerFactory<String, Analytics> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(
                 ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
@@ -29,12 +31,12 @@ public class KafkaProducerConfig {
                 StringSerializer.class);
         configProps.put(
                 ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
-                StringSerializer.class);
+                AnalyticsSerializer.class);
         return new DefaultKafkaProducerFactory<>(configProps);
     }
 
     @Bean
-    public KafkaTemplate<String, String> kafkaTemplate() {
+    public KafkaTemplate<String, Analytics> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
 }

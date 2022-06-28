@@ -12,33 +12,35 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 @Service
 public class AnalyticsService implements AnalyticsPort {
 
-  @Autowired private KafkaTemplate<String, String> kafkaTemplate;
+    @Autowired
+    private KafkaTemplate<String, Analytics> kafkaTemplate;
 
-  @Override
-  public void sendAnalytics() {
-    Analytics analytics = new Analytics();
-    analytics.randomizeAnalytics();
-    ListenableFuture<SendResult<String, String>> future =
-        kafkaTemplate.send("analytics", analytics.toString());
 
-    future.addCallback(
-        new ListenableFutureCallback<>() {
+    @Override
+    public void sendAnalytics() {
+        Analytics analytics = new Analytics();
+        analytics.randomizeAnalytics();
+        ListenableFuture<SendResult<String, Analytics>> future =
+                kafkaTemplate.send("analytics", analytics);
 
-          @Override
-          public void onSuccess(SendResult<String, String> result) {
-            System.out.println(
-                "Sent message=["
-                    + analytics
-                    + "] with offset=["
-                    + result.getRecordMetadata().offset()
-                    + "]");
-          }
+        future.addCallback(
+                new ListenableFutureCallback<>() {
 
-          @Override
-          public void onFailure(Throwable ex) {
-            System.out.println(
-                "Unable to send message=[" + analytics + "] due to : " + ex.getMessage());
-          }
-        });
-  }
+                    @Override
+                    public void onSuccess(SendResult<String, Analytics> result) {
+                        System.out.println(
+                                "Sent message=["
+                                        + analytics
+                                        + "] with offset=["
+                                        + result.getRecordMetadata().offset()
+                                        + "]");
+                    }
+
+                    @Override
+                    public void onFailure(Throwable ex) {
+                        System.out.println(
+                                "Unable to send message=[" + analytics + "] due to : " + ex.getMessage());
+                    }
+                });
+    }
 }
