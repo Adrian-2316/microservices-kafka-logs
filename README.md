@@ -6,6 +6,8 @@
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka)
+![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 <br />
 <div align="center">
@@ -22,7 +24,8 @@
 ## About The Project
 
 This project is a simple event driven architecture communication system using Kafka.
-It is mainly used for testing purposes.
+It is mainly used for testing purposes.<br/>
+![architecture](https://i.ibb.co/0tgBZQd/healthapp-drawio.png)
 
 <br><br>Services:
 
